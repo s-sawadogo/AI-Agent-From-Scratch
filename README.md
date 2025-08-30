@@ -24,7 +24,7 @@ uv init . (initialising a uv project inside one directory)
 **Installing necessary libraries with uv**
 
 ```bash
-uv add langgraph langchain python-dotenv langchain-openai
+uv add langgraph langchain python-dotenv langchain-openai treamlit==1.36
 ```
 
 **Create and put an OPENAI key in the .env file**
@@ -34,10 +34,15 @@ OPENAI_API_KEY=your_openai_api_key
 ````
 
 
-**Running the main file**
+**Running the main file (Display in terminal)**
 
 ```bash
 uv run main.py
+```
+**Running the main_st_app file using streamlit (streamlit UI)**
+
+```bash
+uv run streamlit run main_st_app.py
 ```
 
 ## Tools :
